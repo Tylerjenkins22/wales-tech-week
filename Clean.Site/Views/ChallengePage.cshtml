@@ -7,7 +7,18 @@
 <!-- Main Content-->
 <main class="mb-4">
     <div class="container px-4 px-lg-5">
-        <p>test</p>
         @Html.GetBlockListHtml(Model.MainContent)
+        @Model.BodyText
+        @if (Model.ImageRow != null)
+        {
+            <div style="display: grid;
+                        grid-template-columns: repeat(4,1fr);">
+            @foreach (var img in Model.ImageRow)
+            {
+                    <img src="@img.Url()" style="max-width: 250px; height: 200px;margin:20px" />
+            }
+            </div>
+        }
+        
     </div>
 </main>
