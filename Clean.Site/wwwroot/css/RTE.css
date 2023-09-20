@@ -1,0 +1,38 @@
+
+
+/**umb_name:Heading*/
+h1 {
+	font-size: 40px;
+}
+
+/**umb_name:Red Font*/
+.redText {
+	color: red;
+}
+
+/**umb_name:Black Font*/
+.blackText {
+	color: black;
+}
+
+/**umb_name:yellow background*/
+.yellowBackground {
+	background-color:yellow;
+}
+
+/**umb_name:Rotate Image*/
+img.rotate {
+	transform: rotate(90deg);
+}
+
+/**umb_name:Normal Image*/
+img.non-rotate {
+	transform: none;
+}
+
+/**umb_name:Text Shadow*/
+.shadow {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	font-size:35px;
+}
