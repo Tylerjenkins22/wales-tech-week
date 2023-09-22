@@ -6,18 +6,8 @@ h1 {
 }
 
 /**umb_name:Red Font*/
-.redText {
+p.redText {
 	color: red;
-}
-
-/**umb_name:Black Font*/
-.blackText {
-	color: black;
-}
-
-/**umb_name:yellow background*/
-.yellowBackground {
-	background-color:yellow;
 }
 
 /**umb_name:Custom Background*/
