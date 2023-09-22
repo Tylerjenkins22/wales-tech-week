@@ -5,16 +5,6 @@ h1 {
 	font-size: 40px;
 }
 
-/**umb_name:Red Font*/
-p.redText {
-	color: red;
-}
-
-/**umb_name:Custom Background*/
-p.customBackground {
-	background-color: #f8fc00;
-}
-
 /**umb_name:Large Font*/
 p.largeFont {
 	font-size:40px;
@@ -23,4 +13,9 @@ p.largeFont {
 /**umb_name:Small Font*/
 p.smallFont {
 	font-size:10px;
+}
+
+/**umb_name:Custom Background*/
+p.customBackground {
+	background-color: #f8fc00;
 }
