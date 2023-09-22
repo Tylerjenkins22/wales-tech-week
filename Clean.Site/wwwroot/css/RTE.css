@@ -36,3 +36,15 @@ img.non-rotate {
 	text-transform: uppercase;
 	font-size:35px;
 }
+
+/**umb_name:No Background*/
+.yellowBackground {
+	background-color: none !important;
+}
+
+/**umb_name:No shadow*/
+.shadow {
+	text-shadow: none;
+	text-transform: none;
+	font-size:19px;
+}
