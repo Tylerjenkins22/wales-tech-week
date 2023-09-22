@@ -11259,33 +11259,3 @@ header.masthead .site-heading .h1 {
 
 ;
 }
-
-/**umb_name:Black*/
-p.blackFont {
-	color: black;
-}
-
-/**umb_name:Red*/
-p.redFont {
-	color:red;
-}
-
-/**umb_name:Large Font*/
-p.largeFont {
-	font-size: 40px;
-}
-
-/**umb_name:Medium Font*/
-p.mediumFont {
-	font-size: 20px;
-}
-
-/**umb_name:Small Font*/
-p.smallFont {
-	font-size: 10px;
-}
-
-/**umb_name:Custom Background*/
-p.customBackground {
-	background-color: #00f23d;
-}
