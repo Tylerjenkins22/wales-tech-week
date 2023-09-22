@@ -11262,7 +11262,7 @@ header.masthead .site-heading .h1 {
 
 /**umb_name:Black*/
 p.blackFont {
-	color:black;
+	color: black;
 }
 
 /**umb_name:Red*/
@@ -11285,12 +11285,7 @@ p.smallFont {
 	font-size: 10px;
 }
 
-/**umb_name:Green Background*/
-p.green {
-	background-color: lime;
-}
-
-/**umb_name:Custom Background Colour*/
-p.customColor {
-	background-color: white;
+/**umb_name:Custom Background*/
+p.customBackground {
+	background-color: #00f23d;
 }
