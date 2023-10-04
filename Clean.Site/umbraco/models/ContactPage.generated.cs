@@ -82,6 +82,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Subtitle => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetSubtitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// Talent 4 Tech Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.1.0+3972538")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("talent4TechImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Talent4TechImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTalent4TechImage(this, _publishedValueFallback);
+
+		///<summary>
 		/// Title: Enter a title for this page
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.1.0+3972538")]

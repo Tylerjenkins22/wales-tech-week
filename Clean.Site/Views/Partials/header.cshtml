@@ -1,15 +1,36 @@
 @inherits UmbracoViewPage<IHeaderProperties>
 
 <!-- Page Header-->
-<header class="masthead" style="background-image: url('@(Model.MainImage.Url())')">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="site-heading">
-                    <h1>@Model.Title</h1>
-                    <span class="subheading">@Model.Subtitle</span>
+@if (UmbracoContext.PublishedRequest.PublishedContent.ContentType.Alias == HomePage.ModelTypeAlias)
+{
+    <header class="header" style="background-color: white; padding-top: calc(8rem + 37px);padding-bottom: 10%;">
+        <div class="container position-relative px-4 px-lg-5" style="padding: 0px !important">
+            <div class="header-container" style="display: flex;">
+                <img src="@Model.MainImage.Url()" class="main-image" style="width: 26%; height: 26%;"/>
+                <h1 style="font-size: 2.5rem;
+                           padding: 3% 0px 0px 5%;
+                           width: 50%;
+                           text-transform: uppercase;">@Model.Title</h1>
+                <img src="@Model.Talent4TechImage.Url()" class="talent-tech-image" style="width: 23%;
+                                                                                          height: 20%;
+                                                                                          margin-left: auto;"/>
+            </div>
+            <span class="subheading">@Model.Subtitle</span>
+        </div>
+    </header>
+}
+else
+{
+    <header class="masthead" style="background-image: url('@(Model.MainImage.Url())')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>@Model.Title</h1>
+                        <span class="subheading">@Model.Subtitle</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+}
