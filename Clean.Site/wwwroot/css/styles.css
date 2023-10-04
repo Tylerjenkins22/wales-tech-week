@@ -11123,7 +11123,7 @@ header.masthead {
   padding-top: calc(8rem + 57px);
   padding-bottom: 8rem;
   background: no-repeat center center;
-  background-color: #6c757d;
+  background-color: white;
   background-size: cover;
   background-attachment: scroll;
 }
@@ -11258,4 +11258,48 @@ header.masthead .site-heading .h1 {
 }
 
 ;
+}
+
+/**umb_name:Black*/
+p.blackFont {
+	color:black;
+}
+
+/**umb_name:Red*/
+p.redFont {
+	color:red;
+}
+
+/**umb_name:Large Font*/
+p.largeFont {
+	font-size: 40px;
+}
+
+/**umb_name:Medium Font*/
+p.mediumFont {
+	font-size: 20px;
+}
+
+/**umb_name:Small Font*/
+p.smallFont {
+	font-size: 10px;
+}
+
+/**umb_name:Green Background*/
+p.green {
+	background-color: lime;
+}
+
+/**umb_name:Custom Background Colour*/
+p.customColor {
+	background-color: white;
+}
+
+.talent-tech-image {
+    width: 260px;
+    height: 107px;
+    margin-left: auto;
+}
+.header-container {
+    display: flex;
 }
