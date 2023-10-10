@@ -3,7 +3,7 @@
 <!-- Page Header-->
 @if (UmbracoContext.PublishedRequest.PublishedContent.ContentType.Alias == HomePage.ModelTypeAlias)
 {
-    <header class="header" style="background-color: white; padding-top: calc(5rem + 37px);padding-bottom: 5%;">
+ @*   <header class="header" style="background-color: white; padding-top: calc(5rem + 37px);padding-bottom: 5%;">
         <div class="container position-relative px-4 px-lg-5" style="padding: 0px !important">
             <div class="header-container" style="display: flex;">
                 <img src="@Model.MainImage.Url()" class="main-image" style="width: 26%; height: 26%;"/>
@@ -17,6 +17,14 @@
             </div>
             <span class="subheading"><p style="color: #72166B">@Model.Subtitle</p></span>
         </div>
+    </header>*@
+
+    <header class="header" style="background: linear-gradient(45deg, #72166B 65%, white 50%);  padding-top: calc(1rem + 10px);padding-bottom: 0%;">
+            <div class="header-container" style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="@Model.MainImage.Url()" style="height: 25%; width: 25%; padding-left:20px"/>
+
+            <img src="@Model.Talent4TechImage.Url()" style="height: 25%; width: 25%; padding-right: 20px;"  />
+            </div>
     </header>
 }
 else
