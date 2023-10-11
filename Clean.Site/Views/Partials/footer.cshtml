@@ -4,19 +4,32 @@
     var homePage = Model.AncestorOrSelf<HomePage>();
 }
 
-<!-- Footer-->
-<footer class="border-top">
+@*<!-- Footer-->
+<footer class="border-top" style="margin-top:20px;">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <ul class="list-inline text-center">
-                        <li class="list-inline-item">
+                    <li class="list-inline-item">
                         <a href="https://www.method4.co.uk/">Method4</a>
-                        </li>
+                    </li>
                 </ul>
                 
              
             </div>
+
+        </div>
+    </div>
+</footer>*@
+
+<!-- Footer-->
+<footer class="border-top" style="margin-top:20px; ">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+
+
+            <a href="https://www.method4.co.uk/" style="width: 20%; height: 20%;">  <img src="@homePage.MainImage.Url()" /></a>
+
         </div>
     </div>
 </footer>
