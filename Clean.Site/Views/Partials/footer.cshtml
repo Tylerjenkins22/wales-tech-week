@@ -2,6 +2,7 @@
 
 @{
     var homePage = Model.AncestorOrSelf<HomePage>();
+    var currentPage = UmbracoContext.PublishedRequest.PublishedContent;
 }
 
 @*<!-- Footer-->
@@ -21,15 +22,62 @@
         </div>
     </div>
 </footer>*@
+<footer style="margin-top:20px; padding-bottom: 10px; padding-top:0px ">
+        <div class="container px-4 px-lg-5" style="display:flex">
 
-<!-- Footer-->
-<footer class="border-top" style="margin-top:20px; ">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="image-container">
+                @foreach (var image in homePage.Logos)
+                {
+                    <img src="@image.Url()" style="height: 58px; margin:10px"/>
+                }
+            </div>
 
+            @if(homePage.FooterSocialLinks != null)
+            {
+                <ul class="list-inline" style="margin-left: auto;">
+                    @foreach(var socialLink in homePage.FooterSocialLinks)
+                    {
+                        <li class="list-inline-item">
+                            <a href="@socialLink.Url">
+                                <span class="fa-stack fa-lg">
 
-            <a href="https://www.method4.co.uk/" style="width: 20%; height: 20%;">  <img src="@homePage.MainImage.Url()" /></a>
-
+                                    @if (socialLink.Name == "Twitter")
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="49px" height="49px" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                                        </svg>
+                                    }
+                                    else
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="49px" height="49px" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                        </svg>
+                                        <i class="bi bi-facebook"></i>
+                                    }
+                                </span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            }
         </div>
-    </div>
-</footer>
+        <div class="about-us" style="text-align: center;">
+            <span>@homePage.Address</span>
+        </div>
+    </footer>
+
+@*else
+{
+    <!-- Footer-->
+    <footer class="border-top" style="margin-top:20px; ">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+
+
+                <a href="https://www.method4.co.uk/" style="width: 20%; height: 20%;">  <img src="@homePage.MainImage.Url()" /></a>
+
+            </div>
+        </div>
+    </footer>
+}*@
+
