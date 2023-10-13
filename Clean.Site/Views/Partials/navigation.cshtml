@@ -24,7 +24,7 @@
                         if (hasChildLinks)
                         {
                             <li class="nav-item dropdown">
-                                <a class="nav-link px-lg-3 py-3 py-lg-4 dropdown-toggle" style="color:@(currentPage.Alias == HomePage.ModelTypeAlias ? "black !important" : "white !important")" href="https://google.com" id="navbarDropdown@(dropdownId)" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
+                                <a class="nav-link px-lg-3 py-3 py-lg-4 dropdown-toggle" style="color:@(currentPage.Alias == HomePage.ModelTypeAlias ? "black !important" : "white !important"); font-family: Roboto,sans-serif;font-size: 13px;" href="https://google.com" id="navbarDropdown@(dropdownId)" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
                                     @item.Title
                                 </a>
                                 <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown@(dropdownId)">
@@ -37,7 +37,7 @@
                         }
                         else
                         {
-                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="@item.Link.Url" target="@item.Link.Target" style="color:@(currentPage.Alias == HomePage.ModelTypeAlias ? "black !important" : "white !important")">@item.Title</a></li>
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="@item.Link.Url" target="@item.Link.Target" style="color:@(currentPage.Alias == HomePage.ModelTypeAlias ? "black !important" : "white !important"); font-family: Roboto,sans-serif;font-size: 13px;">@item.Title</a></li>
                         }
                         dropdownId++;
                     }
